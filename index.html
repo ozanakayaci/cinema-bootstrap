@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autodesk</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div
+      style="
+        background-image: url('https://9koy.org/wp-content/uploads/2023/02/sinema-salonu-mu-dijital-platformlar-mi-9koy-scaled.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      "
+    >
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#">CineWissen</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-50 d-flex justify-content-evenly"
+            >
+              <li onclick="test()" class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  id="homebutton"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Salon 1</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Salon 2</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Salon 3</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light text-white" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Slider -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://i0.wp.com/duslerdengercege.com/wp-content/uploads/2022/03/the-batman-poster-scaled.jpg?fit=1728%2C2560&ssl=1"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark">
+              <h5>The BATMAN</h5>
+              <p>
+                When a sadistic serial killer begins murdering key political
+                figures in Gotham, Batman is forced to investigate the city's
+                hidden corruption and question his family's involvement.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark">
+              <h5>Fight Club</h5>
+              <p>
+                An insomniac office worker and a devil-may-care soap maker form
+                an underground fight club that evolves into much more.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://www.derindisplay.com/wp-content/uploads/2022/01/17.jpg?v=1661708268"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark">
+              <h5>The Lord of the Rings: The Fellowship of the Ring</h5>
+              <p>
+                A meek Hobbit from the Shire and eight companions set out on a
+                journey to destroy the powerful One Ring and save Middle-earth
+                from the Dark Lord Sauron.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--Cards-->
+      <div class="my-5 container w-100">
+        <div class="row w-100 justify-content-center">
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://i0.wp.com/duslerdengercege.com/wp-content/uploads/2022/03/the-batman-poster-scaled.jpg?fit=1728%2C2560&ssl=1"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#1" class="text-decoration-none text-danger"
+                ><h5 class="card-title text-center">The Batman</h5></a
+              >
+            </div>
+          </div>
+
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#2" class="text-decoration-none text-danger"
+                ><h5
+                  class="card-title text-center"
+                  style="color: rgb(167, 27, 125)"
+                >
+                  Fight Club
+                </h5></a
+              >
+            </div>
+          </div>
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://www.derindisplay.com/wp-content/uploads/2022/01/17.jpg?v=1661708268"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body overflow-hidden py-2" style="height: 3px">
+              <a href="#3" class="text-decoration-none text-warning"
+                ><h5 class="card-title text-center">
+                  The Lord of the Rings: The Fellowship of the Ring
+                </h5></a
+              >
+            </div>
+          </div>
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://i0.wp.com/duslerdengercege.com/wp-content/uploads/2022/03/the-batman-poster-scaled.jpg?fit=1728%2C2560&ssl=1"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#1" class="text-decoration-none text-danger"
+                ><h5 class="card-title text-center">The Batman</h5></a
+              >
+            </div>
+          </div>
+
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#2" class="text-decoration-none text-danger"
+                ><h5
+                  class="card-title text-center"
+                  style="color: rgb(167, 27, 125)"
+                >
+                  Fight Club
+                </h5></a
+              >
+            </div>
+          </div>
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://www.derindisplay.com/wp-content/uploads/2022/01/17.jpg?v=1661708268"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body overflow-hidden py-2" style="height: 3px">
+              <a href="#3" class="text-decoration-none text-warning"
+                ><h5 class="card-title text-center">
+                  The Lord of the Rings: The Fellowship of the Ring
+                </h5></a
+              >
+            </div>
+          </div>
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://i0.wp.com/duslerdengercege.com/wp-content/uploads/2022/03/the-batman-poster-scaled.jpg?fit=1728%2C2560&ssl=1"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#1" class="text-decoration-none text-danger"
+                ><h5 class="card-title text-center">The Batman</h5></a
+              >
+            </div>
+          </div>
+
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#2" class="text-decoration-none text-danger"
+                ><h5
+                  class="card-title text-center"
+                  style="color: rgb(167, 27, 125)"
+                >
+                  Fight Club
+                </h5></a
+              >
+            </div>
+          </div>
+          <div class="card col-4 m-2" style="width: 18rem">
+            <img
+              src="https://www.derindisplay.com/wp-content/uploads/2022/01/17.jpg?v=1661708268"
+              class="card-img-top pt-3"
+              alt="..."
+            />
+            <div class="card-body overflow-hidden py-2" style="height: 3px">
+              <a href="#3" class="text-decoration-none text-warning"
+                ><h5 class="card-title text-center">
+                  The Lord of the Rings: The Fellowship of the Ring
+                </h5></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bilgi-->
+      <div
+        id="1"
+        class="row mt-5 p-2"
+        style="background-color: rgba(0, 0, 0, 0.397)"
+      >
+        <div class="card bg-transparent text-white" style="width: 100%">
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="img-thumbnail"
+                src="https://i0.wp.com/duslerdengercege.com/wp-content/uploads/2022/03/the-batman-poster-scaled.jpg?fit=1728%2C2560&ssl=1"
+                alt=""
+              />
+            </div>
+
+            <div class="col-9">
+              <div class="card-body">
+                <h1 class="text-danger">The Batman</h1>
+                <p class="card-text mt-5">
+                  When a sadistic serial killer begins murdering key political
+                  figures in Gotham, Batman is forced to investigate the city's
+                  hidden corruption and question his family's involvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="2"
+        class="row mt-5 p-2"
+        style="background-color: rgba(0, 0, 0, 0.397)"
+      >
+        <div class="card bg-transparent text-white" style="width: 100%">
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="img-thumbnail"
+                src="https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="col-9">
+              <div class="card-body">
+                <h1 style="color: rgb(167, 27, 125)">Fight Club</h1>
+                <p class="card-text mt-5">
+                  An insomniac office worker and a devil-may-care soap maker
+                  form an underground fight club that evolves into much more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="3"
+        class="row mt-5 p-2"
+        style="background-color: rgba(0, 0, 0, 0.397)"
+      >
+        <div class="card bg-transparent text-white" style="width: 100%">
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="img-thumbnail"
+                src="https://www.derindisplay.com/wp-content/uploads/2022/01/17.jpg?v=1661708268"
+                alt=""
+              />
+            </div>
+
+            <div class="col-9">
+              <div class="card-body">
+                <h1 class="text-warning">
+                  The Lord of the Rings: The Fellowship of the Ring
+                </h1>
+                <p class="card-text mt-5">
+                  A meek Hobbit from the Shire and eight companions set out on a
+                  journey to destroy the powerful One Ring and save Middle-earth
+                  from the Dark Lord Sauron.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="testAjax">WebApi Sorgula</button>
+    <table id="categoryTable">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Aciklama</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <div id="test">
+      <form action="">
+        <label for="ad">Ad</label>
+        <input type="text" id="ad" />
+        <br />
+        <label for="soyad">Soyaad</label>
+        <input type="text" id="soyad" />
+        <br />
+        <button type="button" id="kaydet">Kaydet</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // jQuery methods go here...
+        $("#testAjax").click(function () {
+          var localurl =
+            "https://socialowebapi20230825200620.azurewebsites.net/";
+          var northwindapi = "https://northwind.now.sh/api/categories/";
+          $.get(localurl, function (data, status) {
+            //alert("Data: " + data.description + "\nname: " + data.name);
+            let tbody = $("#tbody");
+            console.log(tbody);
+            console.log(data);
+            for (let i = 0; i < data.length; i++) {
+              tbody.append(
+                "<tr><td>" +
+                  data[i].date +
+                  "</td><td>" +
+                  data[i].temperatureC +
+                  "</td><td>" +
+                  data[i].temperatureF +
+                  "</td></tr>"
+              );
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
